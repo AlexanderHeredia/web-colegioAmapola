@@ -31,14 +31,14 @@ import Footer from '../components/footer.astro'
             <div class="flex">
                 <div class="facebook">
                     <a href="https://web.facebook.com/colegioamapola/about_contact_and_basic_info?locale=es_LA" target="_blank"><img src="/public/img/contact-img/facebook.webp" alt="" ></a>
-                    <p>Pueden buscarnos en facebook como:</p>
+                    <p>Facebook:</p>
                     <a href="https://web.facebook.com/colegioamapola/about_contact_and_basic_info?locale=es_LA" target="_blank">Colegio Amapola</a>
                 </div>
     
                 <div class="insta">
                     
                     <a href="https://www.instagram.com/colegioamapola/?hl=es" target="_blank"><img src="/public/img/contact-img/instagram.webp" alt=""></a>
-                    <p>En instagram como:</p>
+                    <p>Instagram:</p>
                     <a href="https://www.instagram.com/colegioamapola/?hl=es" target="_blank">@colegioamapola</a>
     
                 </div>
@@ -46,22 +46,41 @@ import Footer from '../components/footer.astro'
                 <div class="whats">
 
                     <img src="/public/img/icons/whatsapp.png" alt="">
-                    <p>pueden escribirnos en nuestro whatsapp:</p>
+                    <p>Whatsapp:</p>
                     <span>849-408-7985</span>
     
                 </div>
                 
                 <div class="email">
                     
-                    <img src="/public/img/icons/gmail.png" alt="">
-                    <p>O pueden consultarnos en nuestro correo electornico:</p>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSGLPkQWRpdlMJwWzqBxvHfmdSXXldlGnNJQsjDvhxSQfxPQbTqGghQDMRSkNPPgMWFxdtTq" target="_blank"></a><img src="/public/img/icons/gmail.png" alt=""></a>
+                    <p>Correo electornico:</p>
                     <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSGLPkQWRpdlMJwWzqBxvHfmdSXXldlGnNJQsjDvhxSQfxPQbTqGghQDMRSkNPPgMWFxdtTq" target="_blank">Info@colegioamapola.com</a>
                 </div>
             </div>
 
         </div>
 
+
     </section>
+
+    <div class="relleno">
+        <article1 class="relleno1">
+            <h1>titulo</h1>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quod nihil natus, praesentium, delectus fugiat commodi rerum magni neque, animi asperiores nemo. Expedita, iure laborum aut libero laudantium rerum blanditiis.</p>
+        </article1>
+        <article2 class="relleno1">
+            <h1>titulo</h1>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quod nihil natus, praesentium, delectus fugiat commodi rerum magni neque, animi asperiores nemo. Expedita, iure laborum aut libero laudantium rerum blanditiis.</p>
+        </article2>
+        <article3 class="relleno1">
+            <h1>titulo</h1>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quod nihil natus, praesentium, delectus fugiat commodi rerum magni neque, animi asperiores nemo. Expedita, iure laborum aut libero laudantium rerum blanditiis.</p>
+        </article3>
+    </div>
 
 
 
@@ -74,9 +93,7 @@ import Footer from '../components/footer.astro'
 
     .contact{
         padding: 55px;
-        background-image: url(/public/img/contact-img/img-de-prueba.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: rgb(209, 209, 135);
     }
 
     .redes{
@@ -99,7 +116,7 @@ import Footer from '../components/footer.astro'
 
     .title p{
         font-size: 25px;
-        font-weight: bold;
+        font-weight: 100px;
     }
 
     .flex{
@@ -109,6 +126,18 @@ import Footer from '../components/footer.astro'
         align-items: center;
         gap: 152px;
     }
+
+    .flex
+    .facebook p,
+    .insta p,
+    .whats p,
+    .email p{
+        font-weight: bold;
+        letter-spacing: 5px;
+        font-size: 20px;
+        font-style: italic;
+    }
+
 
     .facebook img{
         width: 70px;
@@ -126,9 +155,30 @@ import Footer from '../components/footer.astro'
         width: 40px;
     }
     
-    span{
-        border-bottom: 2px solid black;
+    span, 
+    .facebook a, 
+    .insta a, 
+    .email a{
+        text-decoration: underline;
+        font-size: 17px;
+        color: black;
         padding: 0 2px;
+        cursor: pointer;
+    }
+
+    .relleno{
+        padding: 155px 350px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .relleno1{
+        max-width: 200px;
+    }
+
+    .relleno1 h1, .relleno1 p{
+        text-align: center;
     }
 
 </style>
