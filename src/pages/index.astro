@@ -183,7 +183,6 @@ import Footer from '../components/footer.astro'
 	.ancho{
 		display: flex;
 		justify-content: space-between;
-		margin: 0 auto;
 	}
 
 	.relleno2 .back{
@@ -200,6 +199,7 @@ import Footer from '../components/footer.astro'
 		margin-left: 45px;
 		
 	}
+
 
 	.relleno-text2{
 		font-size: 25px;
@@ -344,9 +344,23 @@ import Footer from '../components/footer.astro'
 	}
 
 	@media(max-width:1200px) {
+		
+		.relleno img{
+			display: none;
+		}
+
+		.relleno2 img{
+			display: none;
+		}
+
+		.relleno2 .back{
+			margin-right: 25px;
+			margin-left: 25px;
+		}
+		
 		.direccion{
 			width: 380px;
-			margin-right: 90px;
+			/* margin-right: 90px; */
 		}
 
 		.map img{
@@ -375,8 +389,7 @@ import Footer from '../components/footer.astro'
 		}
 
 		.map img{
-			width: 400px;
-			border-radius: 45px;
+			display: none;
 		}
 
 		.direccion h1{
@@ -388,6 +401,30 @@ import Footer from '../components/footer.astro'
 			font-size: 20px;
 		}
 
+	}
+
+	@media (max-width: 860px){
+
+		.img-relleno, .img-relleno2{
+			display:none;
+		}
+
+		.relleno-text h1{
+			font-size: 35px;
+		}
+
+		.relleno-text p{
+			font-size: 20px;
+		}
+
+		.relleno2 .back{
+			margin-right: 25px;
+			margin-left: 25px;
+		}
+
+		.map{
+			display: none;
+		}
 	}
 
 </style>

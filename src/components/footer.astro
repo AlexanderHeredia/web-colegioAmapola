@@ -45,7 +45,7 @@
         width: 450px;
         color: white;
         padding-right: 35px;
-        
+        text-align: center;
     }
 
     .logo-foot img{
@@ -55,13 +55,13 @@
     }
 
     .logo-foot p{
-        text-align: center;
+       
     }
 
     .linea{
         height: 350px;
         width: 1px;
-        background-color: rgb(147, 144, 144);
+        background-color: rgb(255, 255, 255);
     }
 
     .foot-contact{
@@ -110,6 +110,28 @@
     .tel img{
         width: 30px;
         padding-right: 10px;
+    }
+
+    @media(max-width: 860px){
+        .pie{
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .logo-foot{
+            margin-left: 55px;
+        }
+
+        .linea{
+            width: 550px;
+            height: 1px;
+            margin-top: 25px;
+        }
+
+        .foot-contact{
+           text-align: center;
+        }
+
     }
 
 </style>
