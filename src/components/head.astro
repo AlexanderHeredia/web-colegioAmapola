@@ -10,27 +10,36 @@
 
 
     <nav class="navegacion">
-        <div class="menu" >
-            <img src="/public/img/icons/menu.ico" alt=""  onclick="toggleMenu()">
-        </div>
+        
         <ul class="ul-head" id="menuList">
-            <li class="li-head"><a href="/">inicio</a></li>
+            <li class="li-head"><a href="/">Inicio</a></li>
             <li class="li-head"><a href="/about">Sobre nosotros</a></li>
+            <li class="li-head"><a href="/actividades">Instalaciones</a></li>
             <li class="li-head"><a href="/admisiones">Admisiones</a></li>
-            <li class="li-head"><a href="/actividades">Actividades</a></li>
             <li class="li-head"><a href="/contact">Contactanos</a></li>
         </ul>
         
+        <div class="menu" >
+            <details>
+                <summary><img src="/public/img/icons/menu.ico" alt=""></summary>
+                <ul class="ul-head-responsive" id="menuList">
+                    <li class="li-head"><a href="/">Inicio</a></li>
+                    <li class="li-head"><a href="/about">Sobre nosotros</a></li>
+                    <li class="li-head"><a href="/actividades">Instalaciones</a></li>
+                    <li class="li-head"><a href="/admisiones">Admisiones</a></li>
+                    <li class="li-head"><a href="/contact">Contactanos</a></li>
+                </ul>
+            </details>
+            
+        </div>
+
     </nav>
 
 </header>
 
 <style>
 
-    html, body{
-        height: 100%;
-        width: 100%;
-    }
+   
 
     .head{
         display: flex;
@@ -42,8 +51,7 @@
         position: sticky;
         top: 0;
         width: 100%;
-        z-index: 2;
-        
+        z-index: 21;
     }
 
     .logo{
@@ -69,12 +77,20 @@
         width: 45px;
     }
 
+    summary{
+        list-style: none;
+    }
+
     nav .ul-head{
         display: flex;
         flex-direction: row;
         list-style: none;
         align-items: center;
         margin-right: 15px;
+    }
+
+    .li-head{
+        padding: 15px 0;
     }
 
     .li-head a{
@@ -107,22 +123,26 @@
 
     @media(max-width: 860px){
 
-        nav .ul-head{
-            display: none;
+        nav  .ul-head-responsive{ 
             text-align: center;
             flex-direction: column;
             position: absolute;
             top: 125px;
-            right: -15px;
+            right: 0;
             left: 0px;
             padding: 20px;
             padding-bottom: 20px;
-            line-height: 40px;
+            line-height: 30px;
             background-color: rgb(255, 255, 255);
             border: 2px solid black;
-            box-shadow: ;
-            overflow: hidden;
-            z-index: 2;
+        }
+
+        nav .ul-head{
+            display: none;
+        }
+
+        .li-head{
+            list-style: none;
         }
 
         .li-head a{

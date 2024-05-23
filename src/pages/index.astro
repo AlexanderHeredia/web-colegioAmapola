@@ -65,7 +65,7 @@ import Footer from '../components/footer.astro'
 						</div>
 		
 						<div class="btn-relleno2">
-							<button>Ver mas</button>
+							<a href="/actividades"><button>Ver mas</button></a>
 						</div>
 		
 					</div>
@@ -100,6 +100,10 @@ import Footer from '../components/footer.astro'
 
 
 <style>
+
+	.inicio{
+		overflow: hidden;
+	}
 
 	.bgc{
 		background-image: url("/public/img/index-image/main-fondo.jpg");
@@ -170,6 +174,7 @@ import Footer from '../components/footer.astro'
 	.img-relleno img{
 		width: 390px;
 		margin-left: 50px;
+	
 	}
 
 	.relleno2{
@@ -234,6 +239,7 @@ import Footer from '../components/footer.astro'
 		border: 2px #fff solid;
 		border-radius: 10px;
 		margin-left: 25px;
+	
 	}
 
 	.ubicacion{
@@ -244,8 +250,8 @@ import Footer from '../components/footer.astro'
 	}
 
 	.direccion{
-		width: 500px;
 		margin-right: 110px;
+		max-width: 500px;
 	}
 
 	.map img{
@@ -360,7 +366,6 @@ import Footer from '../components/footer.astro'
 		
 		.direccion{
 			width: 380px;
-			/* margin-right: 90px; */
 		}
 
 		.map img{
@@ -384,8 +389,9 @@ import Footer from '../components/footer.astro'
 		}
 
 		.direccion{
+			text-align: center;
 			width: 500px;
-			margin-right: 70px;
+			margin-right: 5px;
 		}
 
 		.map img{
@@ -426,5 +432,88 @@ import Footer from '../components/footer.astro'
 			display: none;
 		}
 	}
+
+	@media(max-width: 760px){
+
+		.main-page{
+			display: flex;
+			justify-content:  center;
+			align-items: center;
+		}
+
+		.title{
+			margin-left: 35px;
+		}
+
+		#title{
+			font-size: 45px;
+		}
+
+		#lema{
+			font-size: 35px;
+		}
+
+	}
+
+	@media(max-width: 670px){
+		
+		.relleno-text h1{
+			text-align: center;
+		}
+    }
+
+	@media(max-width: 660px){
+		.main-page{
+			flex-direction: column;
+			text-align: center;
+		}
+
+	}
+
+	@media(max-width: 400px){
+		
+		.title{
+			margin: 0 auto;
+		}
+
+		#title{
+			font-size: 45px;
+		}
+
+		#lema{
+			font-size: 30px;
+		}
+
+		.relleno-text{
+			background-color: rgb(229, 232, 232);
+			color: rgb(51, 51, 51);
+			padding: 55px;
+			border-radius: 5px;
+			max-width: 1995px;
+		
+		}
+		.relleno-text h1{
+			font-size: 25px;
+			font-style: italic;
+		}
+
+		.relleno-text p{
+			font-size: 17px;
+			text-align: center;
+		}
+
+		.relleno-text2{
+			font-size: 20px;
+			margin-bottom: 95px;
+		}
+
+		.ubicacion{
+			margin-top: 105px ;
+			display: flex;
+			text-align: center;
+		}
+
+	}
+
 
 </style>

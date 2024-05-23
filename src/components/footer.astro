@@ -35,6 +35,7 @@
         display: flex;
         justify-content: center;
         border-top: 2px solid white;
+        overflow: hidden;
     }
 
     .logo-foot{
@@ -42,7 +43,7 @@
     }
 
     .logo-foot p{
-        width: 450px;
+        max-width: 400px;
         color: white;
         padding-right: 35px;
         text-align: center;
@@ -54,10 +55,6 @@
         margin-bottom: 15px;
     }
 
-    .logo-foot p{
-       
-    }
-
     .linea{
         height: 350px;
         width: 1px;
@@ -67,7 +64,6 @@
     .foot-contact{
         display: flex;
         flex-direction: column;
-        width: 400px;
         padding: 40px;
         margin-left: 15px;
         color: rgb(255, 255, 255);
@@ -132,6 +128,45 @@
            text-align: center;
         }
 
+    }
+
+    @media(max-width: 550px){
+        
+        .logo-foot img{
+            width: 100px;
+            margin-left: 25%;
+            margin-bottom: 15px;
+        }
+
+        .logo-foot p{
+
+            color: white;
+            padding-right: 85px;
+            text-align: center;
+        }
+
+        .logo-foot{
+            margin-left: 90px;
+        }
+
+        .linea{
+            width: 350px;
+            height: 1px;
+            margin-top: 25px;
+        }
+
+    }
+
+    @media(max-width: 440px){
+        .logo-foot img{
+            margin-left: 20%;
+        }
+    }
+
+    @media(max-width: 400px){
+        .logo-foot img{
+            margin-left: 10%;
+        }
     }
 
 </style>

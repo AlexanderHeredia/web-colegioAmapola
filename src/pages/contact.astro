@@ -99,7 +99,7 @@ import Footer from '../components/footer.astro'
     .redes{
         background-color: white;
         padding: 45px;
-        border-radius: 5px;
+        border-radius: 15px;
     }
 
     .title{
@@ -125,7 +125,6 @@ import Footer from '../components/footer.astro'
         text-align: center;
         align-items: center;
         overflow: hidden;
-        
         padding: 0 35px;
     }
 
@@ -181,6 +180,31 @@ import Footer from '../components/footer.astro'
 
     .relleno1 h1, .relleno1 p{
         text-align: center;
+    }
+
+    /* Responsive */
+
+    @media(max-width: 860px) {
+        
+        .title{
+            margin-bottom: 65px;
+        }
+
+        .flex{
+            display: block;
+        }
+
+        .facebook,
+        .insta,
+        .whats,
+        .email{
+            margin-bottom: 25px;
+        } 
+
+        .relleno{
+            padding: 150px 50px;
+        }
+
     }
 
 </style>
