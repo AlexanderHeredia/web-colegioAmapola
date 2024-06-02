@@ -86,11 +86,11 @@ import Footer from '../components/footer.astro'
                     <br>
 
                     <ul class="ul-montesori">
-                        <li class="li-montesori">Generará autodisciplina</li>
-                        <li class="li-montesori">Estimulará su creatividad</li>
-                        <li class="li-montesori">Promoverá la cooperación</li>
-                        <li class="li-montesori">Fomentará la autoevaluación</li>
-                        <li class="li-montesori">Favorecerá la independencia infantil</li>
+                        <li class="li-montesori">Generará autodisciplina</li><br>
+                        <li class="li-montesori">Estimulará su creatividad</li><br>
+                        <li class="li-montesori">Promoverá la cooperación</li><br>
+                        <li class="li-montesori">Fomentará la autoevaluación</li><br>
+                        <li class="li-montesori">Favorecerá la independencia infantil</li><br>
                         <li class="li-montesori">Desarrollará el aprendizaje individual</li>
                     </ul>
 
@@ -137,7 +137,6 @@ import Footer from '../components/footer.astro'
     .historia,
     .montesori{
         padding: 25px;
-        width: 700px;
     }
 
     .historia h1,
@@ -186,6 +185,12 @@ import Footer from '../components/footer.astro'
             display: none;
         }
 
+    }
+
+    @media(max-width: 400px){
+        .about{
+            max-width: 400px;
+        }
     }
 
 </style>
